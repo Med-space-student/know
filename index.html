@@ -1,0 +1,514 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KnowMed Space | Medical Education Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>KnowMed</span>Space
+                </a>
+                
+                <div class="hamburger" id="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#" class="nav-link active" data-section="home">Home</a></li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link" data-section="years">Years <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#" class="dropdown-link" data-section="first-year">First Year</a></li>
+                            <li><a href="#" class="dropdown-link" data-section="soon">Second Year <span class="soon-badge">Soon</span></a></li>
+                            <li><a href="#" class="dropdown-link" data-section="soon">Third Year <span class="soon-badge">Soon</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link" data-section="contact">Contact</a></li>
+                    <li class="nav-item contact-email">
+                        <i class="fas fa-envelope"></i>
+                        <span>halim.medecine@gmail.com</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content" id="main-content">
+        <!-- Home/Hero Section -->
+        <section class="section active" id="home">
+            <div class="container">
+                <div class="hero">
+                    <div class="greeting-container">
+                        <h1 id="dynamic-greeting">Hello Doctor, welcome to your <span class="highlight">KnowMed Space</span></h1>
+                        <p class="subtitle">Where Future Doctors Build Strong Foundations</p>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary" data-section="first-year">
+                            <i class="fas fa-book-medical"></i>
+                            First Year
+                        </a>
+                        <a href="#" class="btn btn-secondary" data-section="soon">
+                            <i class="fas fa-clock"></i>
+                            Second Year <span class="soon-badge">Soon</span>
+                        </a>
+                        <a href="#" class="btn btn-secondary" data-section="soon">
+                            <i class="fas fa-clock"></i>
+                            Third Year <span class="soon-badge">Soon</span>
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <h3>85</h3>
+                            <p>Total Lessons S2</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>8</h3>
+                            <p>Subjects</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>20+</h3>
+                            <p>Anatomy Topics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- First Year Section -->
+        <section class="section" id="first-year">
+            <div class="container">
+                <div class="section-header">
+                    <h2>First Year - Medical Studies</h2>
+                    <p>Select your semester to access all study materials</p>
+                </div>
+                
+                <div class="semester-grid">
+                    <div class="semester-card">
+                        <div class="semester-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Semester 1</h3>
+                        <p>Foundational medical sciences</p>
+                        <a href="#" class="btn btn-outline" data-section="semester-1">Enter Semester</a>
+                    </div>
+                    
+                    <div class="semester-card">
+                        <div class="semester-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Semester 2</h3>
+                        <p>Advanced anatomy & biochemistry</p>
+                        <a href="#" class="btn btn-primary" data-section="semester-2">Enter Semester</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Semester 1 Section -->
+        <section class="section" id="semester-1">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Semester 1</h2>
+                    <p>Access all study materials for Semester 1</p>
+                    <a href="#" class="back-btn" data-section="first-year">
+                        <i class="fas fa-arrow-left"></i> Back to First Year
+                    </a>
+                </div>
+                
+                <div class="semester-menu">
+                    <div class="menu-card">
+                        <i class="fas fa-file-pdf"></i>
+                        <h3>Lessons PDF</h3>
+                        <p>Download all course materials</p>
+                    </div>
+                    <div class="menu-card">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>Lessons Explaining</h3>
+                        <p>Video explanations</p>
+                    </div>
+                    <div class="menu-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Summaries</h3>
+                        <p>Concise study notes</p>
+                    </div>
+                    <div class="menu-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Past Exams</h3>
+                        <p>Previous year papers</p>
+                    </div>
+                    <div class="menu-card">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Online Tests</h3>
+                        <p>Practice quizzes</p>
+                    </div>
+                    <div class="menu-card">
+                        <i class="fas fa-tasks"></i>
+                        <h3>To-Do List</h3>
+                        <p>Study progress tracker</p>
+                    </div>
+                </div>
+                
+                <!-- Semester 1 Subjects -->
+                <div class="subjects-section">
+                    <h3>Semester 1 Subjects</h3>
+                    <div class="subject-grid">
+                        <div class="subject-card">Anatomy</div>
+                        <div class="subject-card">Biochemistry</div>
+                        <div class="subject-card">Cytology</div>
+                        <div class="subject-card">Biophysics</div>
+                        <div class="subject-card">Chemistry</div>
+                        <div class="subject-card">Biostatistics</div>
+                        <div class="subject-card">Histology</div>
+                        <div class="subject-card">Physiology</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Semester 2 Section -->
+        <section class="section" id="semester-2">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Semester 2</h2>
+                    <p>Access all study materials for Semester 2</p>
+                    <a href="#" class="back-btn" data-section="first-year">
+                        <i class="fas fa-arrow-left"></i> Back to First Year
+                    </a>
+                </div>
+                
+                <div class="semester-menu">
+                    <div class="menu-card">
+                        <i class="fas fa-file-pdf"></i>
+                        <h3>Lessons PDF</h3>
+                        <p>Download all course materials</p>
+                    </div>
+                    <div class="menu-card">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>Lessons Explaining</h3>
+                        <p>Video explanations</p>
+                    </div>
+                    <div class="menu-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Summaries</h3>
+                        <p>Concise study notes</p>
+                    </div>
+                    <div class="menu-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Past Exams</h3>
+                        <p>Previous year papers</p>
+                    </div>
+                    <div class="menu-card">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Online Tests</h3>
+                        <p>Practice quizzes</p>
+                    </div>
+                    <div class="menu-card">
+                        <i class="fas fa-tasks"></i>
+                        <h3>To-Do List</h3>
+                        <p>Study progress tracker</p>
+                    </div>
+                </div>
+                
+                <!-- Semester 2 Subjects with Lessons -->
+                <div class="subjects-section">
+                    <h3>Semester 2 Subjects & Lessons</h3>
+                    
+                    <!-- Anatomy -->
+                    <div class="subject-details">
+                        <h4 class="subject-title">
+                            <i class="fas fa-bone"></i>
+                            Anatomy
+                        </h4>
+                        <div class="chapters-grid">
+                            <div class="chapter-card">
+                                <h5>Osteology</h5>
+                                <ul class="lessons-list">
+                                    <li>Coxal bone and femur</li>
+                                    <li>Tibia and fibula</li>
+                                    <li>The bones of the foot</li>
+                                </ul>
+                                <button class="lesson-btn">View Details</button>
+                            </div>
+                            <div class="chapter-card">
+                                <h5>Arthrology</h5>
+                                <ul class="lessons-list">
+                                    <li>Hip joint</li>
+                                    <li>Knee joint</li>
+                                    <li>Talo-crural (ankle) joint</li>
+                                </ul>
+                                <button class="lesson-btn">View Details</button>
+                            </div>
+                            <div class="chapter-card">
+                                <h5>Myology</h5>
+                                <ul class="lessons-list">
+                                    <li>Muscles of the hip</li>
+                                    <li>Muscles of the thigh</li>
+                                </ul>
+                                <button class="lesson-btn">View Details</button>
+                            </div>
+                            <div class="chapter-card">
+                                <h5>Angiology</h5>
+                                <ul class="lessons-list">
+                                    <li>Femoral artery</li>
+                                    <li>Popliteal artery</li>
+                                    <li>Tibio-fibular trunk</li>
+                                    <li>Dorsal arteries of leg/foot</li>
+                                    <li>Venous & lymphatic drainage</li>
+                                </ul>
+                                <button class="lesson-btn">View Details</button>
+                            </div>
+                            <div class="chapter-card">
+                                <h5>Neurology</h5>
+                                <ul class="lessons-list">
+                                    <li>Lumbar plexus</li>
+                                    <li>Femoral nerve</li>
+                                    <li>Modified obturator nerve</li>
+                                    <li>Sacral plexus & sciatic nerve</li>
+                                    <li>Terminal branches of sciatic</li>
+                                </ul>
+                                <button class="lesson-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Biochemistry -->
+                    <div class="subject-details">
+                        <h4 class="subject-title">
+                            <i class="fas fa-dna"></i>
+                            Biochemistry
+                        </h4>
+                        <div class="chapters-grid">
+                            <div class="chapter-card">
+                                <h5>Amino Acids</h5>
+                                <ul class="lessons-list">
+                                    <li>Amino acids, peptides, proteins</li>
+                                    <li>Structure & properties of A.A.</li>
+                                    <li>Amino acid metabolism</li>
+                                    <li>Protein sequencing</li>
+                                </ul>
+                                <button class="lesson-btn">View Details</button>
+                            </div>
+                            <div class="chapter-card">
+                                <h5>Enzymes</h5>
+                                <ul class="lessons-list">
+                                    <li>Enzymology</li>
+                                    <li>Single-substrate enzyme kinetics</li>
+                                    <li>Modulation of enzymatic activity</li>
+                                    <li>Allosteric enzymes</li>
+                                    <li>Vitamins and coenzymes</li>
+                                </ul>
+                                <button class="lesson-btn">View Details</button>
+                            </div>
+                            <div class="chapter-card">
+                                <h5>Nucleic Acids</h5>
+                                <ul class="lessons-list">
+                                    <li>Nucleic acids</li>
+                                </ul>
+                                <button class="lesson-btn">View Details</button>
+                            </div>
+                            <div class="chapter-card">
+                                <h5>Bioenergetics</h5>
+                                <ul class="lessons-list">
+                                    <li>Bioenergetics</li>
+                                </ul>
+                                <button class="lesson-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cytology -->
+                    <div class="subject-details">
+                        <h4 class="subject-title">
+                            <i class="fas fa-microscope"></i>
+                            Cytology
+                        </h4>
+                        <div class="chapters-grid">
+                            <div class="chapter-card">
+                                <h5>Cell Biology</h5>
+                                <ul class="lessons-list">
+                                    <li>Endoplasmic reticulum</li>
+                                    <li>Golgi apparatus</li>
+                                    <li>Ribosome</li>
+                                    <li>Peroxisomes</li>
+                                    <li>Lysosomes</li>
+                                    <li>Mitochondria</li>
+                                    <li>Interphase nucleus</li>
+                                    <li>Cell cycle</li>
+                                </ul>
+                                <button class="lesson-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Chemistry -->
+                    <div class="subject-details">
+                        <h4 class="subject-title">
+                            <i class="fas fa-flask"></i>
+                            Chemistry
+                        </h4>
+                        <div class="chapters-grid">
+                            <div class="chapter-card">
+                                <h5>General Chemistry</h5>
+                                <ul class="lessons-list">
+                                    <li>Oxidation-Reduction (Ox/Red)</li>
+                                    <li>Acid-Base reactions</li>
+                                    <li>Solubility</li>
+                                </ul>
+                                <button class="lesson-btn">View Details</button>
+                            </div>
+                            <div class="chapter-card">
+                                <h5>Organic Chemistry</h5>
+                                <ul class="lessons-list">
+                                    <li>Reaction mechanisms</li>
+                                    <li>Electrophilic addition (HX, X2)</li>
+                                    <li>Nucleophilic substitution (SN1, SN2)</li>
+                                </ul>
+                                <button class="lesson-btn">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Other Subjects -->
+                    <div class="subject-grid compact">
+                        <div class="subject-card">
+                            <i class="fas fa-eye"></i>
+                            <span>Biophysics</span>
+                        </div>
+                        <div class="subject-card">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Biostatistics</span>
+                        </div>
+                        <div class="subject-card">
+                            <i class="fas fa-baby"></i>
+                            <span>Embryology</span>
+                        </div>
+                        <div class="subject-card">
+                            <i class="fas fa-users"></i>
+                            <span>SSH</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- To-Do List Section -->
+                <div class="todo-section">
+                    <h3><i class="fas fa-tasks"></i> Semester 2 To-Do List</h3>
+                    <div class="todo-container">
+                        <!-- To-Do list will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Exams Section -->
+        <section class="section" id="past-exams">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Past Exams</h2>
+                    <p>Access previous years' examination papers</p>
+                </div>
+                
+                <div class="exams-grid">
+                    <!-- Exams will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Online Tests Section -->
+        <section class="section" id="online-tests">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Online Tests</h2>
+                    <p>Practice with interactive quizzes</p>
+                </div>
+                
+                <div class="tests-grid">
+                    <!-- Tests will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Coming Soon Section -->
+        <section class="section" id="soon">
+            <div class="container">
+                <div class="coming-soon">
+                    <i class="fas fa-tools"></i>
+                    <h2>Feature Coming Soon</h2>
+                    <p>This section is currently under development</p>
+                    <a href="#" class="btn btn-primary" data-section="home">Return Home</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Us</h2>
+                    <p>Get in touch for questions or support</p>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>halim.medecine@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <h3>University</h3>
+                                <p>American University Medical Program</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>KnowMed</span>Space
+                </div>
+                <p>Where Future Doctors Build Strong Foundations</p>
+                <p class="copyright">© 2024 KnowMed Space. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for To-Do List Details -->
+    <div class="modal" id="todo-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>To-Do List Details</h3>
+            <div class="modal-body" id="todo-modal-body">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
